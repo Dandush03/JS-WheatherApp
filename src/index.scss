@@ -64,8 +64,10 @@ body {
     }
   }
 
-  input:checked + & {
-    background-color: $c-slider-input;
+  input {
+    &:checked + .slider {
+      background-color: $c-slider-input;
+    }
   }
 
   input:focus + & {

@@ -68,10 +68,10 @@ body {
     &:checked + .slider {
       background-color: $c-slider-input;
     }
-  }
 
-  input:focus + & {
-    box-shadow: 0 0 1px $c-slider-input;
+    &:focus + .slider {
+      box-shadow: 0 0 1px $c-slider-input;
+    }
   }
 
   input:checked + &::before {

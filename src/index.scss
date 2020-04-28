@@ -157,7 +157,8 @@ form {
 }
 
 .err {
-  color: red;
+  background-color: $c-font-bg;
+  color: $c-font;
   position: absolute;
   top: -$space * 12;
   left: 0;

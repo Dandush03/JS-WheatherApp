@@ -4,7 +4,7 @@
 
 #### Microverse Fifth JS Project
 
-![Screenshot from 2020-04-23 16-48-40](https://user-images.githubusercontent.com/51087936/80148000-5c5c0a80-8582-11ea-96e2-677a913f0a37.png)
+![Screenshot from 2020-04-28 19-24-14](https://user-images.githubusercontent.com/51087936/80547384-0b835200-8986-11ea-8b9a-5fb1b6ac4ddb.png)
 
 ---
 
@@ -30,7 +30,7 @@
 
 ## Active Link to Website
 
-Check the page in this [Live Link](https://raw.githack.com/Dandush03/JS-TicTacToe/feature/setup/index.html)
+Check the page in this [Live Link](https://raw.githack.com/Dandush03/JS-WheatherApp/feature/setup/dist/index.html)
 
 ---
 

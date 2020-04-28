@@ -34,6 +34,17 @@ body {
   }
 }
 
+input:checked + .slider {
+  &::before {
+    transform: translateX(26px);
+  }
+
+  &::after {
+    content: 'C°';
+    left: 35%;
+  }
+}
+
 .slider {
   background-color: $c-slider;
   bottom: 0;
@@ -64,27 +75,6 @@ body {
     }
   }
 
-  input {
-    &:checked + .slider {
-      background-color: $c-slider-input;
-    }
-
-    &:focus + .slider {
-      box-shadow: 0 0 1px $c-slider-input;
-    }
-  }
-
-  input:checked + & {
-    &::before {
-      transform: translateX(26px);
-    }
-
-    &::after {
-      content: 'C°';
-      left: 35%;
-    }
-  }
-
   &::after {
     content: 'F°';
     display: block;
@@ -95,8 +85,6 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
-  
 }
 
 form {

@@ -159,9 +159,9 @@ form {
 .err {
   background-color: $c-font-bg;
   color: $c-font;
+  left: 0;
   top: -$space * 12;
   position: absolute;
-  left: 0;
   text-align: center;
   margin: auto;
   width: 100%;

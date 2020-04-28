@@ -1,4 +1,6 @@
-import { submitFrm, Unit, toggleTemp } from './index_helper';
+import {
+  submitFrm, Unit, toggleTemp, WeatherInfo,
+} from './index_helper';
 import './index.scss';
 
 const FrmCreator = () => {
@@ -13,9 +15,11 @@ const FrmCreator = () => {
   const tempButton = document.createElement('input');
   tempButton.type = 'checkbox';
   tempButton.id = 'degrees';
+
   if (data.unit === 'Metric') {
     tempButton.checked = true;
   }
+
   tempButton.onchange = toggleTemp;
   const tempSpan = document.createElement('span');
   tempSpan.className = 'slider round';
@@ -125,6 +129,9 @@ const DisplayData = (data) => {
 
 window.onload = () => {
   const data = JSON.parse(localStorage.getItem('data'));
+  if (data === null) {
+    WeatherInfo('london', 'metric');
+  }
   const displayData = FrmCreator();
   displayData.insertBefore(DisplayData(data), displayData.childNodes[0]);
   document.body.appendChild(displayData);

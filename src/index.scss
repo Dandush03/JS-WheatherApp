@@ -65,16 +65,14 @@ body {
   }
 
   input {
-    &:checked + .slider {
-      background-color: $c-slider-input;
-    }
-
     &:focus + .slider {
       box-shadow: 0 0 1px $c-slider-input;
     }
   }
 
   input:checked + & {
+    background-color: $c-slider-input;
+
     &::before {
       transform: translateX(26px);
     }

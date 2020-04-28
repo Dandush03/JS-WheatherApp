@@ -74,8 +74,15 @@ body {
     }
   }
 
-  input:checked + &::before {
-    transform: translateX(26px);
+  input:checked + & {
+    &::before {
+      transform: translateX(26px);
+    }
+
+    &::after {
+      content: 'C°';
+      left: 35%;
+    }
   }
 
   &::after {
@@ -89,10 +96,7 @@ body {
     transform: translate(-50%, -50%);
   }
 
-  input:checked + &::after {
-    content: 'C°';
-    left: 35%;
-  }
+  
 }
 
 form {

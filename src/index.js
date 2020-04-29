@@ -88,7 +88,6 @@ const DisplayData = (data) => {
   firstSubMain.appendChild(mainInfo);
   firstSubMain.appendChild(mainImg);
 
-
   const minTemp = document.createElement('p');
   const maxTemp = document.createElement('p');
   const humidity = document.createElement('p');

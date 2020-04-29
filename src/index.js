@@ -131,6 +131,8 @@ window.onload = () => {
   const data = JSON.parse(localStorage.getItem('data'));
   if (data === null) {
     WeatherInfo('london', 'metric');
+    // eslint-disable-next-line
+    location.reload();
   }
   const displayData = FrmCreator();
   displayData.insertBefore(DisplayData(data), displayData.childNodes[0]);

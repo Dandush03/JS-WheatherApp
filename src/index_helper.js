@@ -30,7 +30,8 @@ const Unit = (unit) => {
   return { speed, degrees };
 };
 
-function submitFrm() {
+function submitFrm(e) {
+  e.preventDefault();
   const input = document.getElementById('city');
   const check = document.getElementById('degrees');
   let measurement;
